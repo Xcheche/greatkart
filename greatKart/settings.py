@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'category',
+    'accounts',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -69,6 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "greatKart.wsgi.application"
+# Settings to specify custom user model for authentication
+AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Database
